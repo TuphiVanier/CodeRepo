@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+#parallelogram {
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: red;
+    transition: all 0.5s ease-in;
+}
+
+#parallelogram.change{
+    background: blue;
+    transform: translateX(200px) translateY(400px) rotate(20deg) scale(2.5);
+}

@@ -1,0 +1,167 @@
+
+/*
+headerbg #A6AEDA
+textbox #E3E0FF
+outline #B2006E 
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pagedoll {
+    background-repeat:no-repeat; position:fixed; z-index:100; cursor:default;
+    bottom: 0; left: 0;
+    height: 150px;
+    width: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #A6AEDA #E3E0FF;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #E3E0FF;
+    border: 1px solid #A6AEDA;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #A6AEDA;
+    border-radius: 8px;
+    border: 10px none #A6AEDA;
+}
+
+body{
+    background: #301d27 url("../images/vaporwave1.jpg") center fixed;
+    display: block;
+    color: #B2006E;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.background-tint {
+    background-color: #9b005fd7;
+    background-blend-mode: multiply;
+}
+
+.grid{
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-flow: row dense;
+    gap: 2rem;
+}
+
+a{
+    color: #B2006E;
+}
+
+a:hover, a:focus{
+    color: #A6AEDA;
+}
+
+.hover{
+    color: #A6AEDA;
+}
+
+.hover:hover, .hover:focus{
+    color: #B2006E;
+}
+
+h2{
+    background-color: #A6AEDA;
+    color: #B2006E;
+    padding: 10px;
+    border-bottom: 4px solid #B2006E;
+    font-size: 25px;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image h2{
+    background-color: #A6AEDA;
+    color: #B2006E;
+    padding: 10px;
+    border-top: 4px solid #B2006E;
+    font-size: 25px;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image{
+    background-color: #E3E0FF;
+    border-bottom: 4px solid #B2006E;
+    border-left: 4px solid #B2006E;
+    border-right: 4px solid #B2006E;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+}
+
+.image video{
+    width: 100%;
+    height: auto;
+}
+
+.image iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+p{
+    padding: 10px;
+    font-size: 30px;
+}
+
+.title{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.icons{
+    text-align: right;
+}
+
+.headericon{
+    height: 21px;
+    width: 21px;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    margin-left: 2px;
+    font-size: 15px;
+    border: 2px solid #B2006E;
+}
+
+.h1{
+    background-color: #E3E0FF;
+    border: 4px solid #B2006E;
+    min-height: 150px;
+}

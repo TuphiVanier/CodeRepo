@@ -1,0 +1,60 @@
+
+/* Basic reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ^^^ */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 20px;
+    font-family: serif;
+    color: #e9f3f9;
+    line-height: 30px;
+    background-color: #485267;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: justify;
+}
+header{
+    position: sticky;
+    top: 0px;
+    background-color: #485267;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+main{
+    padding: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+.fancy-button{
+    background-color: #548eb9;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border-color: #e9f3f9;
+    box-shadow: 2px 2px #e9f3f943;
+    color: #485267;
+}
+
+.fancy-button:hover{
+    background-color: #e9f3f9;
+    color: #548eb9;
+}
+
+input[type=text], input[type=password], input[type=submit], textarea{
+    display: block;
+}
