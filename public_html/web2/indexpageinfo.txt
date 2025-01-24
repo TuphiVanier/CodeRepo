@@ -1,0 +1,7 @@
+Things to keep in mind for the web2 pages
+
+Audience: bruce + future me + others
+Purpose: grade exercises/projects
+    > nav has to be clear and quick
+    > as less clicks needed to get somewhere as possible
+Content: exercises/projects/others?
