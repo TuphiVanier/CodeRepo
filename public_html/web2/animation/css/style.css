@@ -3,3 +3,50 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#cards{
+    position: relative;
+    overflow: hidden;
+    transform: translateY(1.728rem);
+    transition: transform 0.25s;
+}
+
+#cards img .over{
+    width: auto;
+    height: 300px;
+    position: absolute;
+}
+
+#cards img .behind{
+    width: auto;
+    height: 200px;
+    position: absolute;
+}
+
+#cards a:hover {
+    transform: translateY(0);
+}
+
+#cards .behind{
+    position: relative;
+    top: 1.44rem;
+    opacity: 1;
+    transition: 0.25s;
+}
+
+#cards .over{
+    position: relative;
+    top: 1.44rem;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+#cards a:hover .over{
+    top:0;
+    opacity: 1;
+}
+
+#cards a:hover .behind{
+    top:0;
+    opacity: 0;
+}

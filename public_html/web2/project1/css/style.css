@@ -4,17 +4,30 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+main{
+    padding: 10px;
+}
+
 nav{
     background-color: aliceblue;
     position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+    align-items: center;
 }
 
 #character{
-    padding-top: 60px;
+    margin: 60px;
     background-color: aqua;
-    width: 100%;
+    width: auto;
     height: 100vh;
 }
 
@@ -24,12 +37,23 @@ section img{
 }
 
 aside{
-    background-color: aliceblue;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    background-color: blueviolet;
     width: 100%;
-    height: 150px;
+    height: 200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+aside article{
+    background-color: aquamarine;
+    width: 150px;
+    height: 150px;
+}
+
+aside img{
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
 }

@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+nav{
+    background-color: aqua;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h2{
+    width: 100%;
+    margin-right: 50px;
+    background-color: blue;
+}
+
+article{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    row-gap: 20px;
+    padding: 20px;
+}
+
+article section{
+    background-color: aquamarine;
+}
