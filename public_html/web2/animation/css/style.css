@@ -11,25 +11,18 @@
     transition: transform 0.25s;
 }
 
-#cards img .over{
-    width: auto;
-    height: 300px;
+#cards img {
+    object-fit: cover;
+    object-position: center center;
     position: absolute;
-}
-
-#cards img .behind{
-    width: auto;
-    height: 200px;
-    position: absolute;
-}
+    top: 0;
+  }
 
 #cards a:hover {
     transform: translateY(0);
 }
 
 #cards .behind{
-    position: relative;
-    top: 1.44rem;
     opacity: 1;
     transition: 0.25s;
 }

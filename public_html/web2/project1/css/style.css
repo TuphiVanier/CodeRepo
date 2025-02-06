@@ -24,6 +24,10 @@ nav{
     align-items: center;
 }
 
+.desc{
+    position: absolute;
+}
+
 #character{
     margin: 60px;
     background-color: aqua;
@@ -37,6 +41,8 @@ section img{
 }
 
 aside{
+    position: sticky;
+    bottom: 0;
     background-color: blueviolet;
     width: 100%;
     height: 200px;
