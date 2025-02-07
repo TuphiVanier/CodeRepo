@@ -8,58 +8,160 @@
     display: none;
 }
 
+html{
+    scroll-snap-type: y mandatory;
+}
+
+div{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
 main{
     padding: 10px;
 }
 
 nav{
-    background-color: aliceblue;
     position: fixed;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+    grid-template-columns: 20fr 1fr;
     height: 50px;
+    width: 100%;
     margin-top: 10px;
-    margin-right: 20px;
     align-items: center;
+    z-index: 9;
 }
 
-.desc{
-    position: absolute;
+h2{
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
-#character{
-    margin: 60px;
-    background-color: aqua;
+.character{
+    margin-top: 60px;
     width: auto;
     height: 100vh;
 }
 
-section img{
-    height: 80vh;
-    width: auto;
+.desc1{
+    position: absolute;
+    background-color: #301E67ca;
+    width: 60vw;
+    top: 30vh;
+    right: 0;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.desc{
+    position: absolute;
+    background-color: #301E67ca;
+    width: 60vw;
+    top: 160vh;
+    right: 0;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.profileimg{
+    position: sticky;
+    width: 100%;
+    padding: 20px;
+}
+
+.profileimg img{
+    height: auto;
+    width: 100vw;
+    margin-right:30%;
+    margin-left: auto;
+    display:block;
+}
+
+@media only screen and (min-width: 768px){
+    .profileimg img{
+        height: 95vh;
+        width: auto;
+        margin-right:30%;
+        margin-left: auto;
+        display:block;
+    }
 }
 
 aside{
+    margin-top: -60px;
     position: sticky;
-    bottom: 0;
-    background-color: blueviolet;
+    bottom: 30px;
+    background-color: #301E67;
     width: 100%;
-    height: 200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-    overflow-x: scroll;
-    overflow-y: hidden;
+    color: whitesmoke;
 }
 
-aside article{
+h3{
+    padding: 5px 20px;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.items{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 200px;
+    justify-items: center;
+
+    position: relative;
+    transform: translateY(1.728rem);
+    transition: transform 0.25s;
+    margin-top: -25px;
+}
+
+.items article{
     background-color: aquamarine;
     width: 150px;
     height: 150px;
 }
 
 aside img{
-    overflow: hidden;
     width: 150px;
     height: 150px;
+    position: absolute;
+    top: 0;
+}
+
+.hover{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.items a:hover {
+    transform: translateY(0);
+}
+
+.items .behind{
+    opacity: 1;
+    transition: 0.25s;
+}
+
+.items .hover{
+    position: relative;
+    top: 1.44rem;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.items a:hover .hover{
+    top:0;
+    opacity: 1;
+    background-color: #301E67ca;
+}
+
+.items a:hover .behind{
+    top:0;
+    opacity: .5;
 }

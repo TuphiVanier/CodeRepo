@@ -1,0 +1,46 @@
+#moving{
+    transform: translateY(200px);
+}
+
+#moving img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+.box{
+    position: relative;
+    perspective: 700px;
+    user-select: none;
+}
+
+.box article{
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) ;
+    transition: transform 0.5s;
+    transform-origin: center ;  
+}
+
+.front, .back{
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  backface-visibility: visible;
+  user-select: none;
+  
+
+}
+.front{
+  position: absolute;
+  transform: rotateX(0deg) translate3d(0px, -100px, 50px);
+  
+}
+
+.back{
+  position: absolute;
+  transform: rotateX(-90deg) translate3d(0px, 0px, 225px);
+
+}
+.box:hover article{
+  transform: rotateX(90deg);
+}
