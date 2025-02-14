@@ -5,12 +5,24 @@
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    background-color: transparent;
+    width: 0px;
 }
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.items:hover{
+    &::-webkit-scrollbar-thumb {
+        background-color: #301E67;
+}}
 
 html{
     scroll-snap-type: y proximity;
     overflow-x: hidden;
+    background-color: #121212;
+    color: #ffffff;
 }
 
 div{
@@ -110,7 +122,8 @@ h3{
     overflow-x: scroll;
     overflow-y: hidden;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
     height: 200px;
     justify-items: center;
 
@@ -124,10 +137,18 @@ h3{
     background-color: aquamarine;
     width: 150px;
     height: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.width{
+    width: 150px;
+    height: auto;
 }
 
 aside img{
-    width: 150px;
+    width: auto;
     height: 150px;
     position: absolute;
     top: 0;
