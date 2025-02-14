@@ -9,7 +9,8 @@
 }
 
 html{
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
+    overflow-x: hidden;
 }
 
 div{
@@ -48,17 +49,17 @@ h2{
     position: absolute;
     background-color: #301E67ca;
     width: 60vw;
-    top: 30vh;
+    top: 40vh;
     right: 0;
     padding: 20px;
     color: whitesmoke;
 }
 
-.desc{
+.desc2{
     position: absolute;
     background-color: #301E67ca;
     width: 60vw;
-    top: 160vh;
+    top: 190vh;
     right: 0;
     padding: 20px;
     color: whitesmoke;
@@ -150,7 +151,7 @@ aside img{
 
 .items .hover{
     position: relative;
-    top: 1.44rem;
+    top: -1.44rem;
     opacity: 0;
     transition: 0.25s;
 }

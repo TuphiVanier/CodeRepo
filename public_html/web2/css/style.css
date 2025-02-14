@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: #F2F2F2;
+    background-color: #A3C7D6;
 }
 
 nav{
@@ -25,7 +25,7 @@ nav{
 
 main{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     padding-top: 60px;
     z-index: 1;
 }
@@ -118,4 +118,10 @@ article section{
 
 .prj a:hover .base{
     opacity: 0.25;
+}
+
+.sotheby{
+    scale: 0.5;
+    margin-top: -100px;
+    margin-left: 100px;
 }
