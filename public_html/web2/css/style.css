@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: #A3C7D6;
+    background-color: #121212;
 }
 
 nav{
@@ -118,10 +118,4 @@ article section{
 
 .prj a:hover .base{
     opacity: 0.25;
-}
-
-.sotheby{
-    scale: 0.5;
-    margin-top: -100px;
-    margin-left: 100px;
 }
