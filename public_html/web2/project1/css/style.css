@@ -21,6 +21,7 @@
 :root{
     --background: #121212;
     --background-var: #282828;
+    --background-var2: #121212a8;
     --primary: #1e4967;
     --primary-var: #1e4967a8;
     --secondary-color: #5B8FB9;
@@ -29,7 +30,7 @@
 }
 
 html{
-    scroll-snap-type: y proximity;
+    scroll-snap-type: none;
     overflow-x: hidden;
     background-color: var(--background);
     color: var(--text);
@@ -38,10 +39,6 @@ html{
 section{
     scroll-snap-align: start;
     scroll-snap-stop: always;
-}
-
-main{
-    padding: 10px;
 }
 
 nav{
@@ -74,25 +71,25 @@ h2{
     margin-top: 60px;
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
-}
-
-.desc{
-    position: absolute;
-    background-color: var(--primary-var);
-    width: 60vw;
-    top: 30vh;
-    right: 0;
-    padding: 20px;
-    color: var(--text);
-    z-index: 7;
+    overflow: hidden;
 }
 
 .profileimg{
     position: relative;
     width: 100%;
-    padding: 20px;
-    z-index: 3;
+    height: auto;
+}
+
+.spriteframe{
+    z-index: -1;
+    position: relative;
+    margin-top: -95vh;
+    opacity: 50%;
+    width:100%;
+    height: 100vh;
+    margin-right:30%;
+    margin-left: auto;
+    display:block;
 }
 
 .spriteart{
@@ -103,13 +100,28 @@ h2{
     display:block;
 }
 
+.thirty-seven{
+    z-index: 3;
+}
+
+.desc{
+    position: absolute;
+    background-color: var(--primary-var);
+    width: 80vw;
+    top: 30vh;
+    right: 0;
+    padding: 20px;
+    color: var(--text);
+    z-index: 7;
+}
+
 .bgimages{
     position: absolute;
     top: 0;
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .top{
@@ -273,6 +285,14 @@ aside img{
     gap: 2rem;
 }
 
+.prgrid article{
+    background-color: var(--background-var);
+}
+
+.profile h3{
+    background-color: var(--background-var);
+}
+
 .profile h4{
     margin: 10px 0px;
 }
@@ -283,8 +303,7 @@ aside img{
 }
 
 .profile article, .profile section{
-    background-color: var(--background-var);
-    padding: 5px 10px 10px;
+    padding: 10px 10px;
 }
 
 .profile{
@@ -300,11 +319,6 @@ aside img{
     row-gap: 10px;
 }
 
-.pgrid{
-    display: grid;
-    grid-template-columns: 1fr 10fr;
-}
-
 .afflatus{
     height: 50px;
     width: auto;
@@ -315,6 +329,12 @@ aside img{
     margin: 0px;
 }
 
+.stargrid{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    justify-items: center;
+}
+
 
 @media only screen and (min-width: 768px){
     html{
@@ -323,6 +343,7 @@ aside img{
 
     .desc{
         top: 40vh;
+        width: 60vw;
     }
 
     .profileimg img{
@@ -336,13 +357,24 @@ aside img{
     .prgrid{
         grid-template-columns: 1fr 1fr;
     }
+
+    .garmentgrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
+}
+
+.garmentgrid{
+    background-color: var(--background-var);
+}
 
 .garmentimg{
-    width: 100%;
+    width: 95%;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
 .garmentimg img{
@@ -356,4 +388,26 @@ aside img{
         display: none;
         visibility: hidden;
     }
+}
+
+.pgrid{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    justify-items: center;
+    background-color: var(--background-var2);
+}
+
+.pgrid h4{
+    background-color: var(--primary-var);
+    padding: 5px;
+    margin: -5px 0px 5px;
+}
+
+.pgrid img{
+    max-height: 100px;
+    max-width: 200px;
+}
+
+.profile section{
+    margin: 10px 0px;
 }

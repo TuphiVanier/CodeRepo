@@ -1,0 +1,36 @@
+.keyanims {
+    height: 300px;
+    width: auto;
+    animation-name: twist;
+    animation-duration: 6000ms;
+     animation-fill-mode: forwards; 
+    animation-iteration-count: infinite;
+  }
+
+#keyanims{
+    position: absolute;
+    top: 40px;
+}
+
+main{
+    margin-top: 300px;
+}
+
+@keyframes twist{
+    0% {
+        transform: translateX(0px)
+      }
+      48% {
+        transform: translateX(600px);
+      }
+      50% {
+        transform: rotateY(180deg) translateX(-600px);
+      }
+      98% {
+        transform: translateX(0px) rotateY(180deg);
+      } 
+    
+      100% {
+        transform: translateX(0px);
+      }
+}
