@@ -25,7 +25,7 @@
     --primary: #1e4967;
     --primary-var: #1e4967a8;
     --secondary-color: #5B8FB9;
-    --text: #FFFFFF;
+    --text: #e4eced;
     --accent: #EFBF04;
 }
 
@@ -57,7 +57,7 @@ nav{
     z-index: 9;
 }
 
-nav a{
+nav p{
     text-align: right;
 }
 
@@ -67,6 +67,12 @@ a{
 
 a:hover{
     color: var(--accent);
+}
+
+h1{
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 h2{
@@ -103,13 +109,14 @@ h2{
 .spriteart{
     height: auto;
     width: 100vw;
-    margin-right:30%;
+    margin-right:35%;
     margin-left: auto;
     display:block;
 }
 
 .thirty-seven{
     z-index: 3;
+    transform: translateX(-70px);
 }
 
 .desc{
@@ -449,6 +456,11 @@ aside img{
         display: none;
         visibility: hidden;
     }
+
+    .garmentimg img{
+        height: auto;
+        width: 100%;
+    }
 }
 
 .pgrid{
@@ -466,7 +478,7 @@ aside img{
 
 .pgrid img{
     max-height: 100px;
-    max-width: 200px;
+    max-width: 100px;
 }
 
 .profile section{
