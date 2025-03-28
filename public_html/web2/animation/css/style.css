@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+h1{
+    font-size: 40px;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+    width: 100%;
+}
+
 #cards{
     position: relative;
     overflow: hidden;

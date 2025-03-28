@@ -1,0 +1,15 @@
+#stroke {
+    stroke-dasharray: 2150;
+    animation: appear 3s infinite linear forwards;
+}
+
+@keyframes appear {
+    0%{stroke-dashoffset: 2150;}
+    100%{stroke-dashoffset: 0;}
+}
+
+#svg{
+    position: relative;
+    height: 300px;
+    width: auto;
+}

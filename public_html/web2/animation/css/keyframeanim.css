@@ -5,11 +5,12 @@
     animation-duration: 6000ms;
      animation-fill-mode: forwards; 
     animation-iteration-count: infinite;
+    margin-top: 30px;
   }
 
 #keyanims{
     position: absolute;
-    top: 40px;
+    top: 50px;
 }
 
 main{
