@@ -27,6 +27,7 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     padding-top: 60px;
+    width: 100vw;
     z-index: 1;
 }
 

@@ -202,11 +202,11 @@ h2{
 }
 
 aside{
-    margin-top: -60px;
     position: absolute;
     bottom: -30px;
     background-color: var(--primary);
     width: 100%;
+    height: fit-content;
     color: var(--text);
     z-index: 7;
 }
@@ -225,39 +225,35 @@ h3{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 1rem;
-    height: 200px;
+    height: fit-content;
     justify-items: center;
 
     position: relative;
     transform: translateY(1.728rem);
     transition: transform 0.25s;
     margin-top: -25px;
+    margin-bottom: 20px;
 }
 
 .items article{
     background-color: var(--secondary-color);
-    width: 150px;
-    height: 150px;
+    width: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.width{
-    width: 150px;
-    height: auto;
-}
-
 aside img{
     width: auto;
-    height: 150px;
+    height: 160px;
     position: absolute;
     top: 0;
 }
 
 .hover{
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     padding: 5px;
     color: var(--text)
 }
