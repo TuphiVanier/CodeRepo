@@ -11,21 +11,17 @@
     --zenith: #E379A9;
     --zenith-second: #813859;
 
+    --lilith: #F2A900;
+
+    --lydia: #00ff0d;
+
     --third: #0E2747;
     --background: #212023;
     --background-secondary: #2f2d30;
     --text: #EEEEEE;
 }
 
-.zencolor{
-    color: var(--zenith);
-}
-
 .color{
-    color: var(--voidstar);
-}
-
-.voidcolor {
     color: var(--voidstar);
 }
 
@@ -139,7 +135,6 @@ h3{
 
 .hovericon{
     position: relative;
-    color: var(--voidstar);
 }
 
 .hovericon .hovertext{
@@ -545,4 +540,8 @@ h3{
     
     border: 3px solid var(--zenith-second);
     position: relative;
+}
+
+.theme-color {
+    color: var(--voidstar);
 }

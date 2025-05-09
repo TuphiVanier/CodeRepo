@@ -26,7 +26,7 @@ function openTab(evt, tabName) {
 }
 
 
-function openHead(event, tabName) {
+function openHead(event, tab) {
   // Declare all variables
   var i, headsection, headlinks;
 
@@ -43,19 +43,22 @@ function openHead(event, tabName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tabName).style.display = "block";
+  document.getElementById(tab).style.display = "block";
   event.currentTarget.className += " active";
+
+  setColors(tab);
 }
 
-// var colors = document.getElementsByClassName("color")
+/**
+ * This function sets the colors of the icons in the head section.
+ * 
+ * @param {string} theme - The theme variable in CSS to set.
+ */
+function setColors(theme) {
+  const elements = document.getElementsByClassName('theme-color');
 
-// function colorZen(){
-//   console.log("buttonclicked");
-  
-//   colors = document.getElementsByClassName("color");
-//   for (i = 1; i <= colors.length; i++) {
-//     colors[i].className = colors[i].className.remove(" color");
-//     colors[i].className = colors[i].className.add(" zencolor");
-//   }
-// }
-
+  // Iterates on each element with the class "theme-color" and sets its color.
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].style.color = `var(--${theme})`;
+  }
+}
