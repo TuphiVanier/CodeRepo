@@ -1,19 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LIA</title>
 
-    <script src="https://kit.fontawesome.com/9a2549b3e8.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9a2549b3e8.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header>
-        <a href="../index.html">Back to main</a>
+      <section>
+        <a href="../index.html">Back to main</a> //
+        <a
+          href="https://www.figma.com/design/TCJa8Ah9Mr2wEOIkxOf8sI/Web2-LIA?node-id=0-1&t=zABER51dOGnOGBuZ-1"
+          >Figma File</a
+        >
+      </section>
+      <section id="headicons">
+        <button
+          id="headOpen"
+          class="headlinks"
+          onclick="openHead(event, 'voidstar'); colorVoid()"
+        >
+          <article class="hovericon color">
+            <i class="fa-solid fa-crown color"></i>
+            <span class="hovertext color">Voidstar</span>
+          </article>
+        </button>
+        <button
+          class="headlinks"
+          onclick="openHead(event, 'zenith'); colorZen()"
+        >
+          <article class="hovericon">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span class="hovertext">Zenith</span>
+          </article>
+        </button>
+        <button
+          class="headlinks"
+          onclick="openHead(event, 'lilith'); colorLilith()"
+        >
+          <article class="hovericon">
+            <i class="fa-solid fa-skull"></i>
+            <span class="hovertext">Lilith</span>
+          </article>
+        </button>
+        <button
+          class="headlinks"
+          onclick="openHead(event, 'lydia'); colorLyd()"
+        >
+          <article class="hovericon">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span class="hovertext">Lydia</span>
+          </article>
+        </button>
+      </section>
     </header>
-</body>
+    <section id="voidstar" class="headsection">
+      <section id="fadedimg">
+        <div>...</div>
+        <img src="./images/20250412_005409.jpg" alt="tempimg" />
+      </section>
+      <section id="top">
+        <article id="img">
+          <img
+            src="https://f2.toyhou.se/file/f2-toyhou-se/characters/12247856?1641681080"
+            alt="profileimg"
+          />
+        </article>
+        <article id="topicon">
+          <i class="fa-solid fa-crown"></i>
+        </article>
+        <article id="music">
+          <i class="fa-solid fa-compact-disc"></i>
+          <section>
+            <p>This is Home</p>
+            <p>Cavetown</p>
+          </section>
+        </article>
+        <article id="title">
+          <h2>Voidstar</h2>
+          <h1>God of Illusions</h1>
+        </article>
+        <article id="intro">
+          <p>
+            <mark
+              >The ever unpredictable goddess often finds herself wandering
+              through cities in search of entertainment.</mark
+            >
+          </p>
+          <p>
+            Few have heard her voice. Fewer still have seen her true face. She
+            listens, she learns, she lingers and when she wants, she acts. Her
+            gifts come without warning, her help without promises. She is
+            everywhere but no one can say for certain that its her. Her presence
+            is subtle — never demanding attention, but always noticing
+            everything around her.
+          </p>
+        </article>
+      </section>
+      <section id="largesection">
+        <section id="bigbuttons">
+          <button
+            id="defaultOpen"
+            class="tablinks"
+            onclick="openTab(event, 'about')"
+          >
+            <article class="button">
+              <i class="fa-solid fa-id-card-clip"></i>
+              <span class="buttontext abt">About</span>
+            </article>
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'personality')">
+            <article class="button">
+              <i class="fa-solid fa-sliders"></i>
+              <span class="buttontext pers">Personality</span>
+            </article>
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'skills')">
+            <article class="button">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span class="buttontext skill">Skills</span>
+            </article>
+          </button>
+        </section>
+
+        <section id="about" class="bigsection">
+          <h1>About</h1>
+          <section class="biggrid">
+            <section>
+              <section class="iconlist">
+                <i class="fa-solid fa-signature"></i>
+                <div>
+                  <h3>Name</h3>
+                  <p>???</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-venus-mars"></i>
+                <div>
+                  <h3>Gender</h3>
+                  <p>Female</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-calendar"></i>
+                <div>
+                  <h3>Age</h3>
+                  <p>Immortal</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-birthday-cake"></i>
+                <div>
+                  <h3>Birthday</h3>
+                  <p>June 26</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-ruler"></i>
+                <div>
+                  <h3>Height</h3>
+                  <p>5'1 / 155cm</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                  <h3>Blood type</h3>
+                  <p>A-</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-link"></i>
+                <div>
+                  <h3>Affiliation</h3>
+                  <p>Skyphis, Aliothia</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-user-plus"></i>
+                <div>
+                  <h3>Status</h3>
+                  <p>Single</p>
+                </div>
+              </section>
+            </section>
+            <section>
+              <h2>Likes</h2>
+              <article>
+                <h3>Music</h3>
+                <p>
+                  She finds songs very pleseant to listen to and especially
+                  adores orchestral pieces.
+                </p>
+                <h3>Art</h3>
+                <p>
+                  She has a keen interest in art and finds it very insightful.
+                  She loves looking at pieces that portray the artist's
+                  emotions.
+                </p>
+                <h3>Rain</h3>
+                <p>
+                  She finds the rain to be a peaceful moment and loves the sound
+                  of raindrops colliding agaisnt the window.
+                </p>
+                <h3>Quietness</h3>
+                <p>Silence is never not a good thing.</p>
+                <h3>Snow</h3>
+                <p>
+                  She loves watching snow fall and subsequently sitting in it.
+                </p>
+                <h3>Cold</h3>
+                <p class="last">
+                  The cold is very refreshing and she's always prefered being
+                  cool rather than warm.
+                </p>
+              </article>
+              <h2>Dislikes</h2>
+              <article>
+                <h3>Heat</h3>
+                <p>
+                  She finds being hot and sweaty uncomfortable and will do
+                  anything to avoid it.
+                </p>
+                <h3>Loud noises</h3>
+                <p>
+                  Annoyingly loud sounds will irritate her ears and disturb the
+                  silence. She avoids places she knows will be loud if possible.
+                </p>
+                <h3>Impredictability</h3>
+                <p class="last">
+                  She does not like doing things on the spot, she prefers
+                  knowing ahead of time and planning everything.
+                </p>
+              </article>
+            </section>
+          </section>
+        </section>
+
+        <section id="personality" class="bigsection">
+          <h1>Personality</h1>
+          <section class="biggrid">
+            <section>
+              <section class="iconlist">
+                <i class="fa-solid fa-signature"></i>
+                <div>
+                  <h3>Attitude</h3>
+                  <p>Pessimist</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-venus-mars"></i>
+                <div>
+                  <h3>Alignment</h3>
+                  <p>True Neutral</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-calendar"></i>
+                <div>
+                  <h3>MBTI</h3>
+                  <p>xNTP-T</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-birthday-cake"></i>
+                <div>
+                  <h3>Tarot</h3>
+                  <p>Death</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-ruler"></i>
+                <div>
+                  <h3>Archetype</h3>
+                  <p>Intellectual</p>
+                </div>
+              </section>
+              <section class="iconlist">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                  <h3>Spirit animal</h3>
+                  <p>Cat</p>
+                </div>
+              </section>
+            </section>
+            <section>
+              <h2>Traits</h2>
+              <article>
+                <h3>Positive</h3>
+                <p>Discreet</p>
+                <p>Observant</p>
+                <p>Tolerant.</p>
+                <h3>Neutral</h3>
+                <p>Enigmatic</p>
+                <p>Noncommittal</p>
+                <p>Solitary</p>
+                <h3>Negative</h3>
+                <p>Indecisive</p>
+                <p>Phlegmatic</p>
+                <p class="last">Blunt</p>
+              </article>
+            </section>
+          </section>
+        </section>
+
+        <section id="skills" class="bigsection">
+          <h1>Skills</h1>
+          <section class="iconlist">
+            <i class="fa-solid fa-star"></i>
+            <div>
+              <h3>Ability</h3>
+              <p>
+                <mark>Mirror</mark>: She can copy other people's abilities and
+                create realistic illusions. Her power and defense vary depending
+                on which abilities she copies.
+              </p>
+            </div>
+          </section>
+          <section class="iconlist">
+            <i class="fa-solid fa-chart-simple"></i>
+            <div>
+              <h3>Level</h3>
+              <p>God Tier [9.6]</p>
+            </div>
+          </section>
+          <section class="iconlist">
+            <i class="fa-solid fa-bullseye"></i>
+            <div>
+              <h3>Range</h3>
+              <p>Versatile</p>
+            </div>
+          </section>
+          <section class="iconlist">
+            <i class="fa-solid fa-brain"></i>
+            <div>
+              <h3>Passive</h3>
+              <p>
+                She has increased perception of the world around her and
+                hypersensibility to others using their abilities.
+              </p>
+            </div>
+          </section>
+          <section class="twogrid">
+            <article>
+              <h3>Power</h3>
+              <p>⬖◇◇◇◇</p>
+            </article>
+            <article>
+              <h3>Defense</h3>
+              <p>⬖◇◇◇◇</p>
+            </article>
+            <article>
+              <h3><mark>Speed</mark></h3>
+              <p>◆◆◆◆◆</p>
+            </article>
+            <article>
+              <h3><mark>Trick</mark></h3>
+              <p>◆◆◆◆◆</p>
+            </article>
+            <article>
+              <h3>Recovery</h3>
+              <p>◆◆⬖◇◇</p>
+            </article>
+            <article>
+              <h3><mark>Mastery</mark></h3>
+              <p>◆◆◆◆◆</p>
+            </article>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section id="zenith" class="headsection">
+      <section id="zenimg">
+        <img src="./images/20240914_195225-min.jpg" alt="" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          tenetur corrupti libero. Consequatur, veniam ex?
+        </p>
+      </section>
+      <section id="zentop">
+        <article id="zentitle">
+          <h2>Zenith</h2>
+          <h1>Dawn admist the Dead</h1>
+        </article>
+        <article id="zenicon">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </article>
+      </section>
+    </section>
+  </body>
 </html>
