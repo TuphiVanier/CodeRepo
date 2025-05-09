@@ -26,7 +26,7 @@ function openTab(evt, tabName) {
 }
 
 
-function openHead(evt, tabName) {
+function openHead(event, tabName) {
   // Declare all variables
   var i, headsection, headlinks;
 
@@ -44,7 +44,7 @@ function openHead(evt, tabName) {
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+  event.currentTarget.className += " active";
 }
 
 // var colors = document.getElementsByClassName("color")
