@@ -21,7 +21,7 @@
     --text: #EEEEEE;
 }
 
-.color{
+.theme-color {
     color: var(--voidstar);
 }
 
@@ -542,6 +542,28 @@ h3{
     position: relative;
 }
 
-.theme-color {
-    color: var(--voidstar);
+#zenbox{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border: 3px solid var(--background-secondary);
+}
+
+.iconzen {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    margin: 5px 0px;
+}
+
+.iconzen i {
+    height: auto;
+    width: 60px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    border: 3px solid var(--background-secondary);
+    border-left: 6px double var(--zenith);
 }
