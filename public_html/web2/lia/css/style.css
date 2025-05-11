@@ -13,6 +13,10 @@
     cursor: url(https://cdn.discordapp.com/attachments/689960515090645119/1370923229014921236/Untitled_Artwork.png?ex=68214340&is=681ff1c0&hm=869a87932846fb7653ea9be6174abdc1cc0edef9abec6c8bdb4bcc6551f9e454&), auto;
 }
 
+#lydia {
+    cursor: url(https://cdn.discordapp.com/attachments/689960515090645119/1371230291519082619/Untitled_Artwork.png?ex=68226139&is=68210fb9&hm=684d1489c99b86d23134c9e86d2c5fabd1258a2711170a7ef523330f3ed6e070&), auto;
+}
+
 :root{
     --voidstar: #544CE1;
     --voidstar-second: #483c84;
@@ -635,6 +639,7 @@ h3{
 
     border: 3px solid var(--lydia-second);
     position: relative;
+    animation: 0.5s ease-out 100ms 1 slideBottom both;
 }
 
 #lydside{
@@ -651,18 +656,21 @@ h3{
     background-color: #5289A3;
     color: #5289A3;
     height: 8vh;
+    animation: 0.5s ease-out 150ms 1 slideBottom both;
 }
 
 .two{
     background-color: #466A7C;
     color: #466A7C;
     height: 5vh;
+    animation: 0.5s ease-out 200ms 1 slideBottom both;
 }
 
 .three{
     background-color: #3B4B56;
     color: #3B4B56;
     height: 2vh;
+    animation: 0.5s ease-out 250ms 1 slideBottom both;
 }
 
 .lydmusic{
@@ -671,6 +679,17 @@ h3{
     padding: 5px;
     overflow: hidden;
     position: relative;
+    animation: 0.5s ease-out 200ms 1 slideBottom both;
+}
+
+.sugar{
+    font-size: 55px;
+    text-align: center;
+}
+
+.cafe{
+    font-size: 40px;
+    text-align: center;
 }
 
 .lydmusic i {
@@ -700,4 +719,79 @@ h3{
     padding: 10px;
     position: relative;
     animation: 0.5s ease-out 200ms 1 slideLeft both;
+}
+
+
+
+
+
+.items {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    height: fit-content;
+    justify-items: center;
+
+    position: relative;
+    transform: translateY(1.728rem);
+    transition: transform 0.25s;
+    margin-top: -15px;
+}
+
+.items article {
+    background-color: var(--lydia-second);
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 20px;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    animation: 0.5s ease-out 300ms 1 slideLeft both;
+}
+
+.items img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.hover {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    color: var(--text)
+}
+
+.items a:hover {
+    transform: translateY(0);
+    cursor: url(https://cdn.discordapp.com/attachments/689960515090645119/1371230291519082619/Untitled_Artwork.png?ex=68226139&is=68210fb9&hm=684d1489c99b86d23134c9e86d2c5fabd1258a2711170a7ef523330f3ed6e070&), auto;
+}
+
+.items .behind {
+    opacity: 1;
+    transition: 0.25s;
+}
+
+.items .hover {
+    position: relative;
+    bottom: -1.44rem;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.items a:hover .hover {
+    bottom: 0;
+    opacity: 1;
+    background-color: var(--lydia-second);
+    cursor: url(https://cdn.discordapp.com/attachments/689960515090645119/1371230291519082619/Untitled_Artwork.png?ex=68226139&is=68210fb9&hm=684d1489c99b86d23134c9e86d2c5fabd1258a2711170a7ef523330f3ed6e070&), auto;
+}
+
+.items a:hover .behind {
+    bottom: 0;
+    opacity: .5;
+    cursor: url(https://cdn.discordapp.com/attachments/689960515090645119/1371230291519082619/Untitled_Artwork.png?ex=68226139&is=68210fb9&hm=684d1489c99b86d23134c9e86d2c5fabd1258a2711170a7ef523330f3ed6e070&), auto;
 }
