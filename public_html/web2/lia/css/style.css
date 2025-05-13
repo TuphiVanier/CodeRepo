@@ -6,15 +6,15 @@
 }
 
 #voidstar{
-    cursor: url(https://cdn.discordapp.com/attachments/689960515090645119/1370893782152646786/Untitled_Artwork.png?ex=682127d3&is=681fd653&hm=8b1caf1887b86bd9d1420d74af2a89d14ede187695693c14d472486e8eee2d29&), auto;
+    cursor: url(https://f2.toyhou.se/file/f2-toyhou-se/images/100238386_VKBecFBbGNMaO6K.png), auto;
 }
 
 #zenith{
-    cursor: url(https://cdn.discordapp.com/attachments/689960515090645119/1370923229014921236/Untitled_Artwork.png?ex=68214340&is=681ff1c0&hm=869a87932846fb7653ea9be6174abdc1cc0edef9abec6c8bdb4bcc6551f9e454&), auto;
+    cursor: url(https://f2.toyhou.se/file/f2-toyhou-se/images/100238405_G0fRWadSm8aD0WJ.png), auto;
 }
 
 #lydia {
-    cursor: url(https://cdn.discordapp.com/attachments/689960515090645119/1371230291519082619/Untitled_Artwork.png?ex=68226139&is=68210fb9&hm=684d1489c99b86d23134c9e86d2c5fabd1258a2711170a7ef523330f3ed6e070&), auto;
+    cursor: url(https://f2.toyhou.se/file/f2-toyhou-se/images/100238422_pXqsr76PWXYKhbQ.png), auto;
 }
 
 :root{
@@ -62,7 +62,7 @@ body{
     color: var(--text);
     font-family: "Inconsolata", monospace;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 200;
     font-style: normal;
 }
 
@@ -544,6 +544,7 @@ h3{
 
 #zenintro{
     background-color: var(--background-secondary);
+    padding: 5px;
 }
 
 #stroke {
