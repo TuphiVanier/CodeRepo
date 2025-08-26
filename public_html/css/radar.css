@@ -23,7 +23,7 @@
 
 .radar-chart-3 dl>div {
     position: absolute;
-    color: #777;
+    color: #cad8ec;
     font-size: .6em;
     text-align: center;
 }
@@ -66,4 +66,18 @@
 
 .radar-chart-3 dd {
     margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .radar-chart-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto;
+            padding: 35px;
+            box-sizing: content-box;
+        }
 }

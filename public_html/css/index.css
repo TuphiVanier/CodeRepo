@@ -67,10 +67,11 @@ h3{
 }
 
 img{
-    width: auto;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 50%;
+    object-position: 60% 50%;
+    border-radius: 10px;
 }
 
 #bigsection{
@@ -93,4 +94,44 @@ section article{
     display: list-item;
     list-style: none;
     padding: 5px 0px;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 20%;
+    }
+
+    #image{
+        width: 80vw;
+        height: 10vh;
+        overflow: hidden;
+        transform: scale(1);
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 30%;
+        border-radius: 10px;
+    }
+
+    #minigrid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
