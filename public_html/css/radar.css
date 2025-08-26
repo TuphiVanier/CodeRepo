@@ -1,0 +1,69 @@
+.radar-chart-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 230px;
+    height: 230px;
+    margin: 0 auto;
+    padding: 35px;
+    box-sizing: content-box;
+}
+
+.radar-chart-3 svg {
+    width: 100%;
+    height: 100%;
+}
+
+.radar-chart-3 dl {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.radar-chart-3 dl>div {
+    position: absolute;
+    color: #777;
+    font-size: .6em;
+    text-align: center;
+}
+
+.radar-chart-3 dl>div:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.radar-chart-3 dl>div:nth-child(2) {
+    top: 24%;
+    right: 10%;
+    transform: translateX(50%);
+}
+
+.radar-chart-3 dl>div:nth-child(3) {
+    bottom: 24%;
+    right: 10%;
+    transform: translateX(50%);
+}
+
+.radar-chart-3 dl>div:nth-child(4) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.radar-chart-3 dl>div:nth-child(5) {
+    bottom: 24%;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+.radar-chart-3 dl>div:nth-child(6) {
+    top: 24%;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+.radar-chart-3 dd {
+    margin: 0;
+}
