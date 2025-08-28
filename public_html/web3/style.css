@@ -9,116 +9,92 @@
     display: none;
 }
 
-body {
-    background-color: #121212;
-}
-
-nav {
-    background-color: #1E5AC9;
-    width: 100%;
-    height: 70px;
-    align-items: center;
-    position: fixed;
-    z-index: 9;
+body{
+    width: 100wv;
+    height: 100vh;
+    overflow: hidden;
     padding: 10px;
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    padding-top: 60px;
-    width: 100vw;
-    z-index: 1;
-}
-
-nav a,
-a p {
-    color: #F0A0A8;
-}
-
-a:hover,
-a:hover p {
-    color: #0CE3F5;
-}
-
-h1 {
-    color: #F2F2F2;
-    font-family: "Bona Nova SC", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.category {
-    margin: 20px 0px;
-}
-
-.h2 {
-    margin-right: 200px;
-}
-
-h2 {
-    padding-left: 20px;
+    grid-template-columns: 1fr;
+    height: 100%;
     width: 100%;
-    background-color: #E379A9;
-    font-family: "Bona Nova SC", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
-.prj {
+nav{
+    position: relative;
+}
+
+nav article{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 20px;
-    position: relative;
-    transition: transform 0.25s;
+    grid-template-rows: 1fr 27vw 1fr;
+    position: absolute;
+    width: 25vw;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
 }
 
-.prj section {
-    position: relative;
+nav article img{
+    height: 25vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 70%;
+    border-radius: 10px;
+}
+
+.top{
+    align-self: end;
+}
+
+.mid {
+    align-self: center;
+}
+
+.bot {
+    align-self: start;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100%;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    width: 33vw;
+    height: 100%;
     overflow: hidden;
 }
 
-.prj section p {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-size: 30px;
-}
-
-.prj section img {
+.image img{
+    height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: top;
-    position: absolute;
-    top: 0;
+    object-position: 50% 70%;
+    border-radius: 10px;
 }
 
-article section {
-    background-color: #1E5AC9;
-    height: 200px;
+.bigblock{
+    background-color: aqua;
 }
 
-.prj img .over {
-    height: auto;
-}
-
-.prj .over {
-    position: relative;
-    opacity: 0;
-    transition: 0.25s;
-}
-
-.prj a:hover .over {
-    opacity: 1;
-
-}
-
-.prj .base {
-    opacity: 1;
-    transition: 0.25s;
-}
-
-.prj a:hover .base {
-    opacity: 0.25;
+@media screen and (min-width: 640px) {
+    header{
+        grid-template-columns: 1fr 300px;
+    }
+    
+    main{
+        grid-template-columns: 200px 1fr;
+    }
 }

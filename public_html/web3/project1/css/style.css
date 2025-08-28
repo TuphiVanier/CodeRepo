@@ -5,6 +5,12 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --grid: #000000;
+    --rin: #FFCC11;
+    --len: #FFEE11;
+}
+
 body{
     padding: 20px;
     text-align: center;
@@ -17,10 +23,35 @@ section{
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 50vw;
-    height: 50vw;
+    width: 54vmin;
+    height: 54vmin;
+    overflow: hidden;
+    margin: 2rem;
 }
 
 article{
-    border: 2px #000000 solid;
+    font-size: 4em;
+    align-content: center;
+    width: 18vmim;
+    height: 18vmin;
+}
+
+article:hover{
+    background-color: var(--rin);
+}
+
+.r{
+    border-right: 2px var(--grid) solid;
+}
+
+.b{
+    border-bottom:2px var(--grid) solid;
+}
+
+.l{
+    border-left: 2px var(--grid) solid;
+}
+
+.t{
+    border-top: 2px var(--grid) solid;
 }

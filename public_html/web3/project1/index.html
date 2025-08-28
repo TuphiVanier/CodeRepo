@@ -5,24 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 1 / Tic Tac Toe</title>
 
+    <link
+      rel="shortcut icon"
+      href="https://tu-phi97.582helvetica.com/web3/project1/images/niigorin.png"
+      type="image/x-icon"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/tictoe.js" defer></script>
   </head>
   <body>
     <header>
       <a href="../index.html">ACK TO MAIN</a>
       <h1>Tic Tac Toe</h1>
-      <p>Joueur 1</p>
+      <p id="message">message~</p>
     </header>
     <section>
-      <article>.</article>
-      <article>.</article>
-      <article>.</article>
-      <article>.</article>
-      <article>.</article>
-      <article>.</article>
-      <article>.</article>
-      <article>.</article>
-      <article>.</article>
+      <article class="case r b"></article>
+      <article class="case r b l"></article>
+      <article class="case b l"></article>
+      <article class="case r b t"></article>
+      <article class="case r b l t"></article>
+      <article class="case l b t"></article>
+      <article class="case r t"></article>
+      <article class="case r l t"></article>
+      <article class="case l t"></article>
     </section>
+    <footer>
+      <button><p id="replay">Recommancer</p></button>
+    </footer>
   </body>
 </html>
