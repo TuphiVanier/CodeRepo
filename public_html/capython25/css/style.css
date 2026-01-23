@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+    background-color: #1b1b1b;
+    color: #f3f3f3;
+}
+
+a{
+    color: #71bce9;
+    text-align: center;
+}
+
+a:hover{
+    color: #f7accd;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #f7accd;
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 25px;
+    padding: 10px 0px 5px;
+}
+
+h4{
+    font-family: sans-serif;
+    color: #71bce9;
+}
+
+.teamgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    width: 50vw;
+}
+
+img{
+    height: 300px;
+    width: auto;
+    background-color: whitesmoke;
+}

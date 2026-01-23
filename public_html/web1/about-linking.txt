@@ -1,6 +1,0 @@
-./ or nothing -> here
-../ -> exit current folder
-/ -> root folder
-
-http:// -> open external web adress
-https:// -> open external web adress with SSL encryption (safer)

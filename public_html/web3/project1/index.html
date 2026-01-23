@@ -10,17 +10,35 @@
       href="https://tu-phi97.582helvetica.com/web3/project1/images/niigorin.png"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Ms+Madi&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/tictoe.js" defer></script>
   </head>
   <body>
     <header>
-      <a href="../index.html">ACK TO MAIN</a>
-      <h1>Tic Tac Toe</h1>
-      <p id="message">message~</p>
+      <section class="zen">
+        <h1>Joue avec moi~</h1>
+        <h2>Le perdant achète du bbt ♡</h2>
+      </section>
+      <section class="figma">
+        <a href="../index.html">retour</a> /
+        <a
+          href="https://www.figma.com/design/ZRHz5xKCQirYraBrKMBinH/Tic-Tac-Toe-prject?node-id=0-1&t=YnOsi8Z1mBaz7yP0-1"
+          >figma</a
+        >
+      </section>
     </header>
-    <section>
+    <section id="message" class="hidden">
+      <p id="overlayText"></p>
+      <button id="replay"><p>Recommancer</p></button>
+    </section>
+    <section id="grid">
       <article class="case r b"></article>
       <article class="case r b l"></article>
       <article class="case b l"></article>
@@ -31,8 +49,17 @@
       <article class="case r l t"></article>
       <article class="case l t"></article>
     </section>
-    <footer>
-      <button><p id="replay">Recommancer</p></button>
-    </footer>
+    <section>
+      <section class="left cutin" id="cutinL">
+        <img class="cutin-img" src="./images/zencutout.png" alt="" />
+        <p class="block-text">hehe~</p>
+      </section>
+
+      <section class="right cutin" id="cutinR">
+        <img class="cutin-img" src="./images/kaicutoutgood.png" alt="" />
+        <p class="block-text">Haha!</p>
+      </section>
+    </section>
+    <footer></footer>
   </body>
 </html>

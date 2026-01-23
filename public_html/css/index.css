@@ -18,7 +18,7 @@ body{
     background-color: var(--background);
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 main{
@@ -82,7 +82,7 @@ img{
 section article{
     background-color: var(--background);
     margin: 10px;
-    padding: 5px;
+    padding: 20px;
 }
 
 #minigrid{
@@ -100,7 +100,7 @@ section article{
     body{
         width: 100vw;
         height: 100vh;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     main{

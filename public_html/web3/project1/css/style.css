@@ -6,52 +6,243 @@
 }
 
 :root {
-    --grid: #000000;
-    --rin: #FFCC11;
-    --len: #FFEE11;
+    --rin: #d467a5;
+    --len: #8f00db;
+    --text: #000;
+}
+
+body.player-x article:hover {
+    background-color: var(--rin);
+}
+
+body.player-o article:hover {
+    background-color: var(--len);
 }
 
 body{
+    background-color: #f4f4f4;
+    color: var(--text);
     padding: 20px;
-    text-align: center;
+    text-align: left;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(../images/linedpaperbg.png);
 }
 
-section{
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: var(--len);
+    padding-left: 20px;
+}
+
+.zen{
+    color: var(--rin);
+    font-size: 2.8rem;
+    font-family: "Ms Madi", cursive;
+    transform: rotate(-3deg);
+}
+
+h2{
+    margin-top: -30px;
+    margin-left: 40px;
+    font-size: 2rem;
+}
+
+.figma{
+    text-align: end;
+}
+
+a{
+    color: var(--len);
+}
+
+a:hover{
+    color: var(--rin);
+}
+
+#message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: 30vh;
+    border-radius: 10px;
+    background: #151515e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.4rem;
+    transition: opacity 0.3s ease;
+}
+
+#message.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#message p {
+    text-align: center;
+    align-self: center;
+}
+
+#message button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: var(--text);
+}
+
+#grid{
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 54vmin;
-    height: 54vmin;
+    width: 75vmin;
+    height: 75vmin;
     overflow: hidden;
     margin: 2rem;
+    z-index: 1;
 }
 
 article{
     font-size: 4em;
     align-content: center;
-    width: 18vmim;
-    height: 18vmin;
-}
-
-article:hover{
-    background-color: var(--rin);
+    height: 25vmin;
+    background-size: contain;
 }
 
 .r{
-    border-right: 2px var(--grid) solid;
+    border-right: 2px var(--rin) solid;
 }
 
 .b{
-    border-bottom:2px var(--grid) solid;
+    border-bottom:2px var(--rin) solid;
 }
 
 .l{
-    border-left: 2px var(--grid) solid;
+    border-left: 2px var(--rin) solid;
 }
 
 .t{
-    border-top: 2px var(--grid) solid;
+    border-top: 2px var(--rin) solid;
+}
+
+@media screen and (min-width: 640px) {
+    header{
+        display: grid;
+        grid-template-columns: 1fr 200px;
+    }
+
+    #message{
+        font-size: 2rem;
+    }
+
+    .zen {
+        color: var(--rin);
+        font-size: 4rem;
+        font-family: "Ms Madi", cursive;
+        transform: rotate(-3deg);
+    }
+
+    #grid {
+        justify-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 54vmin;
+        height: 54vmin;
+        overflow: hidden;
+        margin: 2rem;
+    }
+
+    article {
+        font-size: 4em;
+        align-content: center;
+        width: 18vmim;
+        height: 18vmin;
+        background-size: contain;
+    }
+}
+
+.cutin {
+    position: fixed;
+    /* fixed so it’s relative to viewport */
+    top: 30%;
+    width: 30vw;
+    background: transparent;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    text-align: center;
+    transition: transform 0.6s ease, opacity 0.4s ease;
+}
+
+.cutin img {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.block-text {
+    font-size: 1.1rem;
+    color: var(--text);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.cutin-img {
+    width: 100%;
+    display: block;
+}
+
+/* Apply clip-path only to the image */
+.cutin.left .cutin-img {
+    clip-path: polygon(0 0, 100% 18%, 60% 77%, 0% 100%);
+}
+
+.cutin.right .cutin-img {
+    clip-path: polygon(28% 33%, 100% 0%, 100% 100%, 0 85%);
+}
+
+/* Show the cut-in and text */
+.cutin.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.cutin.show .block-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Left cut-in starts off-screen left */
+.cutin.left {
+    left: -250px;
+}
+
+.cutin.show.left {
+    transform: translateX(270px);
+}
+
+/* Right cut-in starts off-screen right */
+.cutin.right {
+    right: -250px;
+}
+
+.cutin.show.right {
+    transform: translateX(-270px);
 }

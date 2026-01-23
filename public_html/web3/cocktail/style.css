@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background: #06021a;
+    --primary-color: #5f2d90;
+    --secondary-color: #e0c7c2;
+    --text-color: #f2f2f3;
+}
+
+body{
+    background-color: var(--background);
+    background-image: url("./img/ce-main-background.png");
+    height: auto;
+    display: block;
+    margin: auto;
+    width: 70vw;
+    align-items: center;
+}
+
+#logo{
+    height: auto;
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+#jouer{
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    gap: 10px;
+}
+
+button:hover{
+    background-color: var(--secondary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: var(--text-color) 2px solid;
+    padding: 5px;
+    width: calc(70vw + 10px);
+    height: auto;
+    font-family: "Pacifico", cursive;
+    font-size: 1.4rem;
+}
+
+#grid button{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: var(--text-color) 2px solid;
+    padding: 5px;
+    width: 35vw;
+    height: auto;
+    font-family: "Pacifico", cursive;
+    font-size: 1.4rem;
+}
+
+#grid button:hover {
+    background-color: var(--secondary-color);
+}

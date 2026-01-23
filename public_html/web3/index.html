@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,36 +6,109 @@
     <title>Web3</title>
 
     <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>PICK YOUR PROJECT!!!</h1>
+      <h1>Quel jeu voulez-vous jouer ?</h1>
       <p>
-        <a href="./project1/"> PROJECT 1</a> |
+        <a href="../index.html"> MAIN</a> |
+        <a
+          href="https://www.figma.com/design/ZRHz5xKCQirYraBrKMBinH/Web3?node-id=0-1&t=jGBJj5Dw7Rthq9u0-0"
+        >
+          FIGMA</a
+        >
+        | <a href="./project1/"> PROJECT 1</a> |
         <a href="./project2/"> PROJECT 2</a> |
-        <a href="./project3/"> PROJECT 3</a>
+        <a href="./cocktail/"> PROJECT 3</a>
       </p>
     </header>
     <main>
       <nav id="icons">
         <article>
-          <img class="top" src="../images/vocaloidcards/kaito.png" alt="" />
-          <img class="mid" src="../images/vocaloidcards/len.png" alt="" />
-          <img class="bot" src="../images/vocaloidcards/rin.png" alt="" />
+          <button
+            id="defaultOpen"
+            class="tablink"
+            onclick="openPeel(event, 'project1')"
+          >
+            <img class="top" src="./images/kaiicon.png" alt="" />
+            <div class="square"></div>
+          </button>
+          <button class="tablink" onclick="openPeel(event, 'project2')">
+            <img class="mid" src="./project2/images/background.png" alt="" />
+            <div class="square"></div>
+          </button>
+          <button class="tablink" onclick="openPeel(event, 'project3')">
+            <img class="bot" src="./images/ce-icon.png" alt="" />
+            <div class="square"></div>
+          </button>
         </article>
       </nav>
-      <section>
-        <article class="image">
-          <img src="../images/vocaloidcards/meiko.png" alt="" />
-        </article>
-        <article class="bigblock">
-          <h2>title</h2>
-          <article>
-            <article>
-              <p>desc block</p>
+
+      <section id="project1" class="peel">
+        <article class="grid">
+          <article class="image zen">
+            <img src="./images/zenfb.png" alt="" />
+          </article>
+          <article class="bigblock">
+            <h2><a href="./project1/">PROJECT 1 / Tic Tac Toe</a></h2>
+            <article class="blockgrid">
+              <article>
+                <p>
+                  Un petit jeux de Tic Tac Toe fait avec du Javascript simple.
+                </p>
+              </article>
+              <article>
+                <p>
+                  A lovely game of Tic Tac Toe made with simple Javascript
+                  arrays and functions. The barebone of a game.
+                </p>
+              </article>
             </article>
-            <article>
-              <p>stat block</p>
+          </article>
+        </article>
+      </section>
+      <section id="project2" class="peel">
+        <article class="grid">
+          <article class="image">
+            <img src="./images/longicon.png" alt="" />
+          </article>
+          <article class="bigblock">
+            <h2><a href="./project2/">PROJECT 2 / Canvas</a></h2>
+            <article class="blockgrid">
+              <article>
+                <p>
+                  Bullet hell dans l'espace?!? Evade les energies mauvaises tout
+                  en collectant le plus de crystaux possibles!
+                </p>
+              </article>
+              <article>
+                <p>
+                  Bullet hell in space!? Dodge the bad guys while collecting the
+                  most crystals possible!
+                </p>
+              </article>
+            </article>
+          </article>
+        </article>
+      </section>
+      <section id="project3" class="peel">
+        <article class="grid">
+          <article class="image">
+            <img src="./images/ce-longimage.png" alt="" />
+          </article>
+          <article class="bigblock">
+            <h2><a href="./cocktail/">PROJECT 3 / Grand Jeu</a></h2>
+            <article class="blockgrid">
+              <article>
+                <p>Melanger des boissons magique pour votre clientele~</p>
+              </article>
+              <article>
+                <p>
+                  Brew magical cocktails to serve your customers and keep them
+                  all satisfied!
+                </p>
+              </article>
             </article>
           </article>
         </article>
