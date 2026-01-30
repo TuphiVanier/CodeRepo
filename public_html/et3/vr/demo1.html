@@ -158,11 +158,26 @@
       ></a-plane>
       <a-sky color="#ECECEC" material="color: #c4c4c4"></a-sky>
       <a-assets>
-        <a-asset-item id="tree" src="./assets/Character.gltf"></a-asset-item>
+        <a-asset-item id="mymel" src="./assets/Character.gltf"></a-asset-item>
+        <a-asset-item
+          id="kitty"
+          src="./assets/kittyremastered.glb"
+        ></a-asset-item>
       </a-assets>
 
       <!-- Using the asset management system. -->
-      <a-gltf-model src="#tree"></a-gltf-model>
+      <a-gltf-model
+        position="-1.37163 0 -7.45757"
+        src="#kitty"
+        gltf-model="./assets/kittyremastered.glb"
+        scale="0.5674 0.5674 0.5674"
+      ></a-gltf-model>
+      <a-gltf-model
+        position="1.38424 -0.71454 13.16942"
+        src="#mymel"
+        gltf-model="./assets/Character.gltf"
+        rotation="0 110.12134230855396 0"
+      ></a-gltf-model>
     </a-scene>
   </body>
 </html>
