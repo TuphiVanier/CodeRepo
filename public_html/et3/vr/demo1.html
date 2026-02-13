@@ -178,6 +178,31 @@
         gltf-model="./assets/Character.gltf"
         rotation="0 110.12134230855396 0"
       ></a-gltf-model>
+
+      <a-entity camera look-controls wasd-controls position="0 1 0">
+        <a-entity
+          cursor="fuse: true; fuseTimeout: 500"
+          position="0 0 -1"
+          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+          material="color: black; shader: flat"
+        >
+        </a-entity>
+      </a-entity>
     </a-scene>
   </body>
+
+  <script>
+    // Component to change to a sequential color on click.
+    AFRAME.registerComponent("cursor-listener", {
+      init: function () {
+        var lastIndex = -1;
+        var COLORS = ["red", "green", "blue"];
+        this.el.addEventListener("click", function (evt) {
+          lastIndex = (lastIndex + 1) % COLORS.length;
+          this.setAttribute("material", "color", COLORS[lastIndex]);
+          console.log("I was clicked at: ", evt.detail.intersection.point);
+        });
+      },
+    });
+  </script>
 </html>
